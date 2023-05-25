@@ -1,0 +1,7 @@
+@use './partials/card' as *;
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    background-color: black;
+    color: bisque;
+}
