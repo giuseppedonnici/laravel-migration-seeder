@@ -19,6 +19,7 @@
                           <p class="card-text"> <span>Numero carrozze: </span>{{ $train->num_carriages }}</p>
                           <p class="card-text"> <span>In orario: </span>{{ $train->on_time ? 'si' : 'no' }}</p>
                           <p class="card-text"> <span>Cancellato: </span>{{ $train->cancelled ? 'si' : 'no' }}</p>
+                          <p class="card-text"> <span>Prezzo: </span>{{ $train->price }}</p>
                           <a href="#" class="btn btn-primary">Acquista biglietto</a>
                         </div>
                       </div>

@@ -22,12 +22,13 @@ class TrainsTableSeeder extends Seeder
             $train->departure_date = strval($faker->randomElement(['2023-05-24', '2023-05-25', '2023-05-26']));
             $train->departure_station = strval($faker->randomElement(['Fidenza', 'Parma', 'Salsomaggiore']));
             $train->arrival_station = strval($faker->randomElement(['Rimini', 'Riccione', 'Cesena']));
-            $train->departure_time = $faker->time();
-            $train->arrival_time = $faker->time();
+            $train->departure_time = $faker->time('H:i');
+            $train->arrival_time = $faker->time('H:i');
             $train->train_code = $faker->randomNumber(4, true);
             $train->num_carriages = $faker->randomDigit();
             $train->on_time = $faker->randomElement([0, 1]);
             $train->cancelled = $faker->randomElement([0, 1]);
+            $train->price = $faker->randomFloat(2, 1, 99);
             $train->save();
         }
     }
